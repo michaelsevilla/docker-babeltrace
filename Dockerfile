@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y software-properties-common && \
       python-pip \
       lttng-tools \
       liblttng-ust-dev \
+      python3-pip \
       python3-babeltrace && \
-    easy_install python3-pip && pip3 install numpy && \
+    easy_install pip && pip3 install numpy && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* debian/
 
